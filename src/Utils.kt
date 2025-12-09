@@ -280,3 +280,9 @@ fun clearDump(day: String) {
     val f = Path("src/${day}_dump.txt")
     f.toFile().delete()
 }
+
+fun List<List<String>>.printlnMatrix(asString: Boolean = false) {
+    for (row in this) {
+        println(if(asString) row.joinToString("") else row)
+    }
+}
