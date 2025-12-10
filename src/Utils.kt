@@ -286,3 +286,9 @@ fun List<List<String>>.printlnMatrix(asString: Boolean = false) {
         println(if(asString) row.joinToString("") else row)
     }
 }
+
+fun List<Any>.printRows() {
+    for (row in this) {
+        println(row)
+    }
+}
